@@ -1,0 +1,63 @@
+body {
+    font-family: 'Noto Sans', sans-serif;
+    color: #323232;
+    padding-top: 4rem;
+}
+
+.flex-container {
+    display: flex;
+    align-items: flex-start;
+}
+
+/* **************************** typography ****************************** */
+h4 {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+}
+
+p {
+    margin-bottom: 1.5rem;
+}
+
+.card {
+    max-width: 23.75rem;
+    margin: 0 auto;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px #e8e8e8;
+    border: 1px solid #e8e8e8;
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+svg {
+    width: 18px;
+    margin: 0 10px;
+}
+
+svg path {
+    fill: #718096;
+}
+
+.card-body img {
+    width: 50px;
+    border-radius: 40%;
+    margin-right: 10px;
+}
+
+/* wider version of the card */
+@media only screen and (min-width: 900px) {
+    .card {
+        display: flex;
+        max-width: 46.875rem;
+    }
+
+    picture {
+        flex: 1 1 27.78%;
+    }
+
+    .card-body {
+        flex: 1 1 72.22%;
+    }
+}
